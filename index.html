@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                },
+
+                backgroundImage: {
+                    'hero': "url('assets/cover.jpg')",
+                },
+            }
+        }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+            content-visibility: auto;
+        }
+        }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <title>GRIC Academy</title>
+
+</head>
+<body class="w-full min-h-screen">
+    <!-- navbar -->
+    <nav id="home" class="w-full flex items-center justify-center px-[2rem] py-[1rem] lg:px-[4rem] lg:py-[1.5rem] bg-slate-900">
+        <div class="w-full max-w-[82rem] md:flex md:justify-between md:items-center">
+            <a href="index.html" class="text-2xl lg:text-3xl font-semibold md:font-bold text-white hover:text-slate-300">GRIC Academy</a>
+
+            <ul class="flex items-center">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#home" class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500">Home</a>
+                </li>
+
+                <li class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500 mx-4 my-6 md:my-0">
+                    <a href="#about" class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500">About</a>
+                </li>
+
+                <li class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500 mx-4 my-6 md:my-0">
+                    <a href="#administrations" class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500">Administrations</a>
+                </li>
+
+                <li class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500 mx-4 my-6 md:my-0">
+                    <a href="rooms.html" class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500">Rooms</a>
+                </li>
+
+                <li class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500 mx-4 my-6 md:my-0">
+                    <a href="#contact" class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- cover with hero -->
+    <div class="
+        w-full h-[42rem]
+        bg-no-repeat bg-cover bg-center
+		bg-[url('assets/cover.jpg')]
+        relative
+        flex justify-center items-center
+    ">
+        <div class="w-full max-w-[42rem] flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center">
+                <span class="text-lg md:text-xl lg:text-2xl font-bold text-cyan-500">GRIC</span>
+
+                <p class="text-3xl md:text-4xl lg:text-5xl text-white font-bold text-center">Empowering students, shaping futures.</p>
+            </div>
+
+            <p class="text-lg md:text-xl lg:text-2xl text-slate-200 font-medium text-center mt-[0.5rem]">from the earliest years to higher education!</p>
+
+            <a href="enrollment.html"><button class="px-[1.75rem] py-[1.125rem] flex justify-center items-center gap-[1rem] md:gap-[2rem] bg-cyan-500 rounded-full mt-[1rem] md:mt-[2rem]">
+                <span class="text-white text-base md:text-lg lg:text-xl font-semibold md:font-bold">Enroll Now</span>
+
+                <i class="fa-solid fa-arrow-right-long text-white text-base md:text-lg lg:text-xl"></i>
+            </button></a>
+        </div>
+    </div>
+
+    <!-- about us -->
+    <div id="about" class="w-full pt-[2rem] md:pt-[3rem] bg-white lg:px-[1rem] xl:px-0">
+        <div class="w-full max-w-[58rem] flex flex-col justify-center items-center gap-[0.5rem] md:gap-[1rem] mx-auto">
+            <span class="text-base md:text-lg lg:text-xl font-semibold text-slate-500">ABOUT US</span>
+
+            <p class="text-xl md:text-2xl lg:text-3xl font-semibold text-cyan-600 text-center">A comprehensive educational institution offering a wide range of academic programs from preschool to college.</p>
+
+            <p class="text-sm md:text-base lg:text-lg font-normal text-slate-900 text-center">Our school was founded with a vision to provide a holistic learning experience to students of all ages and backgrounds. At our preschool, we provide a nurturing and stimulating environment that helps young children develop a love for learning. Our experienced teachers use a play-based curriculum to encourage creativity and exploration, laying the foundation for academic success in the years to come.</p>           
+        </div>
+
+        <!-- mission -->
+        <div class="w-full max-w-[80rem] mx-auto mt-[2rem] md:mt-[3rem] mb-[1rem] md:mb-[2rem] flex justify-center items-center gap-[1rem] md:gap-[2rem]">
+            <div class="w-full max-w-[46rem] px-[1rem] md:px-[1.25rem] py-[0.75rem] md:py-[1rem] border border-cyan-800 border-l-[0.5rem]">
+                <div class="flex flex-col gap-[0.5rem] md:gap-[0.75rem]">
+                    <span class="text-sm md:text-base font-semibold text-cyan-500">Mission</span>
+
+                    <p class="text-base md:text-lg font-normal text-slate-900">To provide a safe and inclusive learning environment where students can acquire knowledge, develop critical thinking skills, and cultivate positive attitudes towards themselves and others. Our school is committed to fostering a sense of community, promoting cultural diversity, and preparing students to become responsible and engaged global citizens.</p>
+                </div>
+            </div>
+
+            <img src="assets/mission.jpg" alt="" class="w-full max-w-[32rem] h-[12rem] object-cover">
+        </div>
+
+        <!-- vision -->
+        <div class="w-full max-w-[80rem] mx-auto mt-[1rem] md:mt-[2rem] flex justify-center items-center gap-[1rem] md:gap-[2rem]">
+            <img src="assets/vision.jpg" alt="" class="w-full max-w-[32rem] h-[12rem] object-cover">
+
+            <div class="w-full max-w-[46rem] px-[1rem] md:px-[1.25rem] py-[0.75rem] md:py-[1rem] border border-cyan-800 border-r-[0.5rem]">
+                <div class="flex flex-col gap-[0.5rem] md:gap-[0.75rem]">
+                    <span class="text-sm md:text-base font-semibold text-cyan-500">Vision</span>
+
+                    <p class="text-base md:text-lg font-normal text-slate-900">Our vision is to be a leading educational institution that empowers students to achieve their full potential and become leaders in their chosen fields. We strive to create an environment that encourages innovation, creativity, and lifelong learning. Our goal is to inspire a passion for knowledge and a desire to make a positive impact in the world.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Administrations -->
+    <div id="administrations" class="py-[2rem] md:py-[3rem]">
+        <div class="w-full max-w-[58rem] flex flex-col justify-center items-center gap-[0.5rem] md:gap-[1rem] mx-auto">
+            <span class="text-base md:text-lg lg:text-xl font-semibold text-slate-500">ADMINISTRATIONS</span>
+
+            <p class="text-xl md:text-2xl lg:text-3xl font-semibold text-cyan-600 text-center">We strive to create a supportive environment that encourages growth, development, and innovation, so that our community can reach their full potential.</p>          
+        </div>
+
+        <!-- cards -->
+        <div class="flex justify-center items-center gap-[0.75rem] xl:gap-[1.25rem] mt-[1rem] md:mt-[2rem] lg:px-[1rem] xl:px-0">
+            <!-- card -->
+            <div class="w-full max-w-[19.563rem] rounded-t-md">
+                <img src="assets/admin1.jpg" alt="" class="w-full h-[19.563rem] object-cover rounded-t-md">
+
+                <div class="bg-cyan-800 w-full py-[0.5rem] md:py-[1rem] flex justify-center items-center flex-col gap-[0.5rem] md:gap-[1rem]">
+                    <span class="text-lg md:text-xl lg:text-2xl text-white font-semibold">Jake Ocampo</span>
+
+                    <span class="text-xs md:text-sm text-slate-200 font-medium">OIC, GRIC Academy</span>
+                </div>
+            </div>
+
+            <div class="w-full max-w-[19.563rem] rounded-t-md">
+                <img src="assets/admin2.jpg" alt="" class="w-full h-[19.563rem] object-cover rounded-t-md">
+
+                <div class="bg-cyan-800 w-full py-[0.5rem] md:py-[1rem] flex justify-center items-center flex-col gap-[0.5rem] md:gap-[1rem]">
+                    <span class="text-lg md:text-xl lg:text-2xl text-white font-semibold">Jerud Flores</span>
+
+                    <span class="text-xs md:text-sm text-slate-200 font-medium">Vice President for Administration</span>
+                </div>
+            </div>
+
+            <div class="w-full max-w-[19.563rem] rounded-t-md">
+                <img src="assets/admin3.jpg" alt="" class="w-full h-[19.563rem] object-cover rounded-t-md">
+
+                <div class="bg-cyan-800 w-full py-[0.5rem] md:py-[1rem] flex justify-center items-center flex-col gap-[0.5rem] md:gap-[1rem]">
+                    <span class="text-lg md:text-xl lg:text-2xl text-white font-semibold">Jason De Rudo</span>
+
+                    <span class="text-xs md:text-sm text-slate-200 font-medium">Vice President for Academics Affairs </span>
+                </div>
+            </div>
+
+            <div class="w-full max-w-[19.563rem] rounded-t-md">
+                <img src="assets/admin4.jpg" alt="" class="w-full h-[19.563rem] object-cover rounded-t-md">
+
+                <div class="bg-cyan-800 w-full py-[0.5rem] md:py-[1rem] flex justify-center items-center flex-col gap-[0.5rem] md:gap-[1rem]">
+                    <span class="text-lg md:text-xl lg:text-2xl text-white font-semibold">Shaine Jimenez</span>
+
+                    <span class="text-xs md:text-sm text-slate-200 font-medium">Vice President for Finance</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact us -->
+    <div id="contact" class="w-full py-[1rem] md:py-[2rem] bg-slate-900"> 
+        <div class="flex w-full max-w-[82rem] mx-auto">
+            <form class="w-full max-w-[41rem] p-[1rem] md:p-[2rem] bg-white">
+                <h1 class="text-lg md:text-xl lg:text-2xl font-semibold md:font-bold text-slate-900">Get in <span class="text-lg md:text-xl lg:text-2xl font-semibold md:font-bold text-cyan-500">Touch</span></h1>
+
+                <p class="text-xs md:text-sm font-noraml text-slate-500">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+
+                <!-- inputs -->
+                <div class="flex gap-[0.5rem] md:gap-[0.75rem] flex-col mt-[1rem] md:mt-[2rem] mb-[0.75rem] md:mb-[1.125rem]">
+                    <input type="text" placeholder="Name" class="w-full px-[1rem] py-[0.75rem] text-base text-slate-900 bg-slate-50 border border-cyan-500">
+
+                    <input type="email" placeholder="Email" class="w-full px-[1rem] py-[0.75rem] text-base text-slate-900 bg-slate-50 border border-cyan-500">
+
+                    <textarea typeof="text" placeholder="Message" class="w-full min-h-[8rem] px-[1rem] py-[0.75rem] text-base text-slate-900 bg-slate-50 border border-cyan-500 resize-none"></textarea>
+                </div>
+                
+                <div class="flex justify-end items-end">
+                    <button class="w-[7rem] h-[2rem] bg-cyan-500 flex justify-center items-center text-white text-sm font-medium">Send</button>
+                </div>
+            </form>
+
+            <img src="assets/contactUs.jpg" class="w-full max-w-[41rem] h-[28rem] object-cover">
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="w-full flex items-center justify-center p-[1rem] bg-slate-800">
+        <div class="w-full max-w-[82rem] flex justify-between items-center">
+            <div class="flex flex-col gap-[0.5rem]">
+                <p class="text-white text-sm md:text-base font-normal md:font-medium">&copy; Copyright 2023. All Rights Reserved.</p>
+
+                <p class="text-white text-sm md:text-base font-light md:font-normal">Designed by <span class="text-cyan-500 text-sm md:text-base font-light md:font-normal">Smurf4B</span></p>
+            </div>
+
+            <div class="flex gap-[1rem] md:gap-[2rem] items-center text-cyan-500 text-lg md:text-2xl">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

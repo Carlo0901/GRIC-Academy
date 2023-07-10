@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                },
+
+                backgroundImage: {
+                    'hero': "url('assets/cover.jpg')",
+                },
+            }
+        }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+            content-visibility: auto;
+        }
+        }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <title>GRIC Academy | Rooms</title>
+</head>
+<body class="w-full min-h-screen">
+    <!-- navbar -->
+    <nav id="home" class="w-full flex items-center justify-center px-[2rem] py-[1rem] lg:px-[4rem] lg:py-[1.5rem] bg-slate-900">
+        <div class="w-full max-w-[82rem] md:flex md:justify-between md:items-center">
+            <a href="index.html" class="text-2xl lg:text-3xl font-semibold md:font-bold text-white hover:text-slate-300">GRIC Academy</a>
+
+            <ul class="flex items-center">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="index.html#home" class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500">Home</a>
+                </li>
+
+                <li class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500 mx-4 my-6 md:my-0">
+                    <a href="index.html#about" class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500">About</a>
+                </li>
+
+                <li class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500 mx-4 my-6 md:my-0">
+                    <a href="index.html#administrations" class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500">Administrations</a>
+                </li>
+
+                <li class="text-base font-semibold lg:font-bold cursor-pointer text-cyan-500 mx-4 my-6 md:my-0">
+                    <a href="rooms.html" class="text-base font-semibold lg:font-bold cursor-pointer hover:text-cyan-500">Rooms</a>
+                </li>
+
+                <li class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500 mx-4 my-6 md:my-0">
+                    <a href="index.html#contact" class="text-base font-semibold lg:font-bold text-cyan-700 cursor-pointer hover:text-cyan-500">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- enrollment process -->
+    <div class="my-[3rem] w-full max-w-[82rem] mx-auto lg:px-[1rem]">
+        <div class="flex flex-col gap-[1rem]">
+            <span class="text-5xl font-bold text-cyan-600">Our Rooms</span>
+
+            <p class="text-xl font-medium text-slate-500">Together we learn, together we grow.</p>
+        </div>
+
+        <!-- rooms -->
+        <div class="w-full max-w-[66rem] flex flex-wrap lg:gap-[1rem] xl:gap-[2rem] mt-[3rem] mx-auto">
+            <!-- preschool -->
+            <div class="relative w-[32rem] pt-[1.5rem] flex justify-center">
+                <div class="border border-dashed w-[32rem] border-cyan-600 pt-[3rem] pb-[1rem]">
+                    <img src="assets/preschool.jpg" class="w-[28rem] h-[28rem] object-cover mx-auto">
+                </div>
+
+                <div class="w-[14rem] h-[3rem] flex justify-center items-center absolute mx-auto top-0 bg-slate-900 rounded-md text-white text-2xl font-semibold">Preschool</div>
+            </div>
+
+            <!-- elementary -->
+            <div class="relative w-[32rem] pt-[1.5rem] flex justify-center">
+                <div class="border border-dashed w-[32rem] border-cyan-600 pt-[3rem] pb-[1rem]">
+                    <img src="assets/elementary.jpg" class="w-[28rem] h-[28rem] object-cover mx-auto">
+                </div>
+
+                <div class="w-[14rem] h-[3rem] flex justify-center items-center absolute mx-auto top-0 bg-slate-900 rounded-md text-white text-2xl font-semibold">Elementary</div>
+            </div>
+
+            <!-- high school -->
+            <div class="relative w-[32rem] pt-[1.5rem] flex justify-center">
+                <div class="border border-dashed w-[32rem] border-cyan-600 pt-[3rem] pb-[1rem]">
+                    <img src="assets/highschool.jpg" class="w-[28rem] h-[28rem] object-cover mx-auto">
+                </div>
+
+                <div class="w-[14rem] h-[3rem] flex justify-center items-center absolute mx-auto top-0 bg-slate-900 rounded-md text-white text-2xl font-semibold">High School</div>
+            </div>
+
+            <!-- College -->
+            <div class="relative w-[32rem] pt-[1.5rem] flex justify-center">
+                <div class="border border-dashed w-[32rem] border-cyan-600 pt-[3rem] pb-[1rem]">
+                    <img src="assets/college.jpg" class="w-[28rem] h-[28rem] object-cover mx-auto">
+                </div>
+
+                <div class="w-[14rem] h-[3rem] flex justify-center items-center absolute mx-auto top-0 bg-slate-900 rounded-md text-white text-2xl font-semibold">College</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="w-full flex items-center justify-center p-[1rem] bg-slate-800">
+        <div class="w-full max-w-[82rem] flex justify-between items-center">
+            <div class="flex flex-col gap-[0.5rem]">
+                <p class="text-white text-sm md:text-base font-normal md:font-medium">&copy; Copyright 2023. All Rights Reserved.</p>
+
+                <p class="text-white text-sm md:text-base font-light md:font-normal">Designed by <span class="text-cyan-500 text-sm md:text-base font-light md:font-normal">Smurf4B</span></p>
+            </div>
+
+            <div class="flex gap-[1rem] md:gap-[2rem] items-center text-cyan-500 text-lg md:text-2xl">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
